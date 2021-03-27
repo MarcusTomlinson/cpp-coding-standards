@@ -12,7 +12,8 @@ int main()
 {
     SPtr<BaseClass> base = std::make_shared<DerivedClass>( DerivedClass::PrintToOutput::Enabled );
 
-    auto piFunction = [base]() {
+    auto piFunction = [base]()
+    {
         auto derived = std::dynamic_pointer_cast<DerivedClass>( base );
 
         if ( derived != nullptr )
