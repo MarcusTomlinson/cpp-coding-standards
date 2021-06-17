@@ -26,7 +26,7 @@ int main()
 
     auto pi = std::async( piFunction );
 
-    base->PureVirtualPrint( {"1", "two", "11", "0x4", "V"} );
+    base->PureVirtualPrint( { "1", "two", "11", "0x4", "V" } );
 
     std::cout << "Pi: " << pi.get();
 

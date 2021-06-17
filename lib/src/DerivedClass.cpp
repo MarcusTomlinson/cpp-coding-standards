@@ -8,9 +8,7 @@ using namespace CppCodingStandards;
 
 static const float PI = 3.14159265359f;
 
-namespace CppCodingStandards
-{
-namespace Private
+namespace CppCodingStandards::Private
 {
 
 class DerivedClassImpl
@@ -26,8 +24,7 @@ public:
     std::mutex mutex;
 };
 
-}  // namespace Private
-}  // namespace CppCodingStandards
+}  // namespace CppCodingStandards::Private
 
 DerivedClass::DerivedClass( PrintToOutput printState )
     : p( std::make_unique<Private::DerivedClassImpl>( printState ) )
