@@ -48,7 +48,7 @@ void DerivedClass::PureVirtualPrint( const std::vector<std::string>& strings ) c
 
 float DerivedClass::SlowlyGetPi( int newWaitTime )
 {
-    std::lock_guard<std::mutex>( p->mutex );
+    std::lock_guard<std::mutex> lock( p->mutex );
 
     if ( newWaitTime != -1 )
     {
