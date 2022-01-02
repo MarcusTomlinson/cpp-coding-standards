@@ -50,7 +50,7 @@ float DerivedClass::SlowlyGetPi( int newWaitTime )
 {
     std::lock_guard<std::mutex> lock( p->mutex );
 
-    if ( newWaitTime != -1 )
+    if ( newWaitTime >= 0 )
     {
         p->waitTime = newWaitTime;
     }
