@@ -24,7 +24,7 @@ int main()
         return 0.0f;
     };
 
-    auto pi = std::async( piFunction );
+    auto pi = std::async( std::launch::async, piFunction );
 
     base->PureVirtualPrint( { "1", "two", "11", "0x4", "V" } );
 
