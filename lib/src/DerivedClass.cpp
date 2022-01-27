@@ -14,7 +14,7 @@ namespace CppCodingStandards::Private
 class DerivedClassImpl
 {
 public:
-    DerivedClassImpl( DerivedClass::PrintToOutput printState )
+    explicit DerivedClassImpl( DerivedClass::PrintToOutput printState )
         : printState( printState )
     {
     }
