@@ -6,15 +6,10 @@ Minimal example project to demonstrate some modern C++ best practices.
 
 ## Build
 
-First, install CMake (https://cmake.org/download/), then execute the following:
+First, install Meson (https://mesonbuild.com/Getting-meson.html), then execute the following:
 
 ```
 cd cpp-coding-standards
-mkdir build
-cd build
-cmake ..
-make
+meson setup builddir
+meson compile -C builddir
 ```
-
-- `cmake ..` will auto-detect your IDE / compiler. To manually select one, use `cmake -G`.
-- When building for an IDE, instead of `make`, simply open the cmake generated project file.

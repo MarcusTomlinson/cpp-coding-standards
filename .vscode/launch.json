@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CppCodingStandardsApp",
+            "request": "launch",
+            "preLaunchTask": "Build",
+            "program": "${workspaceFolder}/builddir/app/CppCodingStandardsApp",
+            "cwd": "${workspaceFolder}",
+            "type": "cppvsdbg",
+            "osx": {
+                "type": "cppdbg",
+                "MIMode": "lldb"
+            }
+        }
+    ]
+}

@@ -1,3 +1,6 @@
-*.user
+# Misc
 .DS_Store
 build*
+
+# VSCode
+.vscode/settings.json
